@@ -26,7 +26,7 @@
 	</head>
 	<body>
 		<!-- navbar sectin -->
-		<section class="mx-auto w-9/12">
+		<section class="mx-auto w-11/12 sm:w-9/12">
 			<div class="navbar bg-base-100 shadow-sm">
 				<div class="navbar-start">
 					<div class="dropdown">
@@ -48,7 +48,7 @@
 						</div>
 						<ul
 							tabindex="-1"
-							class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+							class="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-52 p-2 shadow"
 						>
 							<li><a>Home</a></li>
 							<li><a>Products</a></li>
@@ -85,12 +85,20 @@
 		</section>
 
 		<!-- container section for products -->
-		<section class="mx-auto w-9/12">
+		<section class="mx-auto w-11/12 sm:w-9/12">
 			<h1 class="text-center font-bold text-black text-xl my-5">
 				Our Products
 			</h1>
-			<div id="category-container" class="text-center space-x-5 mb-5">
-				<button id="all-item" class="px-4 py-2 bg-blue-500 text-white rounded">
+
+			<!-- category container -->
+			<div
+				id="category-container"
+				class="flex flex-wrap justify-center gap-2 mb-4"
+			>
+				<button
+					id="all-item"
+					class="px-4 py-2 bg-blue-600 text-white rounded active-btn"
+				>
 					All
 				</button>
 			</div>
@@ -112,6 +120,81 @@
 					</div>
 				</div>
 			</dialog>
+		</section>
+
+		<!-- newsletter & footer section -->
+		<section class="bg-blue-950">
+			<!-- newsletter section -->
+			<footer
+				class="footer sm:footer-horizontal text-gray-400 p-10 mx-auto w-11/12 sm:w-9/12"
+			>
+				<nav>
+					<aside class="text-blue-600 font-bold text-xl">SwiftCart</aside>
+					<p>
+						your one-stop shop for all your fashion and lifestyle needs.Quality
+						products, fast delivery,and excellent support
+					</p>
+				</nav>
+				<nav>
+					<h6 class="footer-title">Quick Links</h6>
+					<a class="link link-hover">Home</a>
+					<a class="link link-hover">Products</a>
+					<a class="link link-hover">About</a>
+					<a class="link link-hover">Contact</a>
+				</nav>
+				<nav>
+					<h6 class="footer-title">Support</h6>
+					<a class="link link-hover">FAQ</a>
+					<a class="link link-hover">Shipping</a>
+					<a class="link link-hover">Returns</a>
+					<a class="link link-hover">Privacy policy</a>
+				</nav>
+				<form>
+					<h6 class="footer-title">Subscribe to our Newsletter</h6>
+					<fieldset class="w-80 space-y-3">
+						<label
+							>The latest news,articles,and resources,<br />sent to your inbox
+							weekly.</label
+						>
+						<div>
+							<input
+								type="text"
+								placeholder="Enter your email"
+								class="input input-bordered w-36 text-sm"
+							/>
+							<button class="btn btn-primary">Subscribe</button>
+						</div>
+					</fieldset>
+				</form>
+			</footer>
+
+			<!-- footer section -->
+			<footer
+				class="footer mx-auto w-11/12 sm:w-9/12 sm:footer-horizontal text-gray-400 items-center border-t border-gray-50 py-5"
+			>
+				<aside class="grid-flow-col items-center">
+					<p>@ 2025 SwiftCart,Inc.All right reserved</p>
+				</aside>
+				<nav
+					class="grid-flow-col gap-2 md:place-self-center md:justify-self-end"
+				>
+					<a>
+						<i class="fa-brands fa-facebook-f"></i>
+					</a>
+					<a>
+						<i class="fa-brands fa-twitter"></i>
+					</a>
+					<a>
+						<i class="fa-brands fa-instagram"></i>
+					</a>
+					<a>
+						<i class="fa-brands fa-linkedin-in"></i>
+					</a>
+					<a>
+						<i class="fa-solid fa-envelope"></i>
+					</a>
+				</nav>
+			</footer>
 		</section>
 		<script src="./index.js"></script>
 	</body>

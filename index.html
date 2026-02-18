@@ -26,7 +26,7 @@
 	</head>
 	<body>
 		<!-- navbar sectin -->
-		<section class="mx-auto w-9/12">
+		<section class="mx-auto w-11/12 sm:w-9/12">
 			<div class="navbar bg-base-100 shadow-sm">
 				<div class="navbar-start">
 					<div class="dropdown">
@@ -48,7 +48,7 @@
 						</div>
 						<ul
 							tabindex="-1"
-							class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+							class="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-52 p-2 shadow"
 						>
 							<li><a>Home</a></li>
 							<li><a>Products</a></li>
@@ -85,18 +85,20 @@
 		<!-- banner/hero section -->
 		<section class="pb-5">
 			<div
-				class="hero h-[400px] bg-cover bg-center"
+				class="hero h-[400px] bg-cover bg-center relative"
 				style="
 					background-image: url(https://i.ibb.co/FkpkYqW3/banner-image.png);
 				"
 			>
-				<div class="hero-overlay"></div>
-				<div class="hero-content justify-start text-neutral-content w-full">
-					<div class="max-w-md text-start ml-40">
-						<h1 class="mb-4 text-4xl text-white font-bold">
+				<div class="hero-overlay bg-black/40"></div>
+				<div
+					class="hero-content justify-start text-neutral-content w-full px-4 sm:px-6 md:px-12"
+				>
+					<div class="max-w-md sm:max-w-lg md:max-w-xl text-start">
+						<h1 class="mb-4 text-3xl sm:text-4xl font-bold text-white">
 							Best Collection For You
 						</h1>
-						<p class="mb-4">
+						<p class="mb-4 text-sm sm:text-base text-white">
 							Discover the latest trends in fashion,electronics,and more shop
 							with confidence and style at SwiftCart
 						</p>
@@ -107,7 +109,7 @@
 		</section>
 
 		<!-- feature section -->
-		<section class="mx-auto w-9/12 pb-5">
+		<section class="mx-auto w-11/12 sm:w-9/12 pb-5">
 			<div class="text-center pb-4">
 				<h2 class="mb-2 text-2xl text-center font-bold">Why Choose Us</h2>
 				<p class="text-gray-400 pb-6">
@@ -115,7 +117,7 @@
 				</p>
 			</div>
 			<!-- 4 grid item section -->
-			<div class="grid grid-cols-4 gap-5">
+			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
 				<div class="rounded space-y-2 p-4 relative bg-gray-50">
 					<div
 						class="w-10 h-10 border bg-blue-50 rounded flex items-center justify-center absolute -top-4"
@@ -170,10 +172,10 @@
 		</section>
 
 		<!-- trending section -->
-		<section class="w-9/12 mx-auto pb-5">
+		<section class="w-11/12 sm:w-9/12 mx-auto pb-5">
 			<h1 class="text-2xl font-bold text-start mb-4">Trending Now</h1>
-			<div class="grid grid-cols-1 md:grid-cols-3 gap-2">
-				<div class="card shadow-sm bg-base-100 px-5">
+			<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+				<div class="card shadow-sm bg-base-100 px-4 sm:px-5">
 					<figure class="pb-3">
 						<img
 							src="https://i.ibb.co.com/SX7zkTMP/backpack.webp"
@@ -183,23 +185,25 @@
 						/>
 					</figure>
 					<div class="flex justify-between">
-						<a class="border bg-blue-100 rounded-2xl">Mens Clothing</a>
-						<div>
+						<a class="border bg-blue-100 rounded-2xl px-2 py-1 text-xs"
+							>Mens Clothing</a
+						>
+						<div class="flex items-center gap-1">
 							<a class="text-orange-300"><i class="fa-solid fa-star"></i></a>
-							<a class="text-gray-500">3.9(120)</a>
+							<a class="text-gray-500 text-xs">3.9(120)</a>
 						</div>
 					</div>
-					<div class="space-y-2 my-4">
-						<h2 class="card-title text-left font-bold">
+					<div class="space-y-1 my-3">
+						<h2 class="card-title text-left font-bold text-sm sm:text-base">
 							Foldsak no 1 backpack
 						</h2>
-						<h2 class="font-medium text-left">$109.95</h2>
+						<h2 class="font-medium text-left text-sm sm:text-base">$109.95</h2>
 					</div>
 					<div class="card-actions justify-between">
-						<button class="btn btn-outline px-6">
+						<button class="btn btn-outline btn-sm sm:btn-md px-4 sm:px-6">
 							<i class="fa-regular fa-eye"></i>Details
 						</button>
-						<button class="btn btn-primary px-6">
+						<button class="btn btn-primary btn-sm sm:btn-md px-4 sm:px-6">
 							<i class="fa-solid fa-cart-shopping"></i>Add
 						</button>
 					</div>
@@ -271,7 +275,7 @@
 		<section class="bg-blue-950">
 			<!-- newsletter section -->
 			<footer
-				class="footer sm:footer-horizontal text-gray-400 p-10 mx-auto w-10/12"
+				class="footer sm:footer-horizontal text-gray-400 p-10 mx-auto w-11/12 sm:w-9/12"
 			>
 				<nav>
 					<aside class="text-blue-600 font-bold text-xl">SwiftCart</aside>
@@ -315,7 +319,7 @@
 
 			<!-- footer section -->
 			<footer
-				class="footer mx-auto w-9/12 sm:footer-horizontal text-gray-400 items-center border-t border-gray-50 py-5"
+				class="footer mx-auto w-11/12 sm:w-9/12 sm:footer-horizontal text-gray-400 items-center border-t border-gray-50 py-5"
 			>
 				<aside class="grid-flow-col items-center">
 					<p>@ 2025 SwiftCart,Inc.All right reserved</p>
